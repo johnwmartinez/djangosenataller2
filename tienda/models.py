@@ -8,4 +8,4 @@ class Producto (models.Model):
     cantidad = models.PositiveIntegerField()
     precio = models.FloatField()
     def __str__(self):
-        return self.nombre
+        return self

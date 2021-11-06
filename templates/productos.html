@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    Salida
+    {% for producto in productos %}
+        {{producto.nombre}} - {{producto.cantidad}} <br >
+    {% endfor %}
 </body>
 </html>

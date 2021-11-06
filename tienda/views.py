@@ -5,5 +5,7 @@ from .models import Producto
 # Create your views here.
 def productos(request):
     productos = Producto.objects.filter(cantidad__gt = 0)
-    return render(request, 'productos.html', {})
+    return render(request, 'productos.html', {
+        'productos':productos,
+    })
     # return HttpResponse("Hola Johnsito")
